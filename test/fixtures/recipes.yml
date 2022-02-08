@@ -2,16 +2,16 @@
 
 one:
   name: MyString
-  preparation_time: 1
-  cooking_time: 1
+  preparation_time: 1.5
+  cooking_time: 1.5
   description: MyText
-  public: 1.5
+  public: false
   user_id: 1
 
 two:
   name: MyString
-  preparation_time: 1
-  cooking_time: 1
+  preparation_time: 1.5
+  cooking_time: 1.5
   description: MyText
-  public: 1.5
+  public: false
   user_id: 1
