@@ -2,17 +2,16 @@
 
 <div class ="container m-5">
     <h1 class="text-success text-center">Public Recipes</h1>
-    <div class ="p-2 text-end"><%= link_to 'Add Recipes', new_recipes_path() %></div>
     <% @public_recipes.each do |recipe| %>
-    <div class="row border p-5">
-        <div class="col-4">
-            <h1><%= link_to recipe.name, recipes_show_path(recipe.id)  %></h1>
-            <p>By: <%= recipe.user.name %></p>
+        <div class="row border p-5">
+            <div class="col-6">
+                <h1><%= link_to recipe.name, recipes_show_path(recipe.id)  %></h1>
+                <p class="d-flex">By: <%=recipe.user.name %></p>
+            </div>
+            <div class ="col-6">
+            <p>Total food items: <%= recipe.recipe_foods.all.count %></p>
+            <p>Total price: $ <%=recipe.recipe_foods.reduce(0) { |sum, recipe_food| sum + (recipe_food.food.price * recipe_food.quantity) }%></p>
+            </div>
         </div>
-        <div class ="col-8">
-        <p>Total food items: <%= recipe.recipefoods.quantity %></p>
-        <p>Total price: <%= recipe.recipefoods.food.price * ecipe.recipefoods.quantity   %></p>
-        </div>
-    </div>
     <% end %>
 </div>
