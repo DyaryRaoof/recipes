@@ -12,6 +12,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/.history
 
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
@@ -31,3 +32,4 @@
 /config/master.key
 
 node_modules/
+

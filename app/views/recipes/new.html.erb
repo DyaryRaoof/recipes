@@ -1,0 +1,10 @@
+<h1>New recipes</h1>
+<%= form_with model: @recipe, url: create_recipes_path do |form| %>
+  <%= form.text_field :name, placeholder: 'name', class: 'form-control mb-3' %>
+  <%= form.number_field :preparation_time, placeholder: 'preparation time', class: 'form-control mb-3' %>
+  <%= form.number_field :cooking_time, placeholder: 'cooking time', class: 'form-control mb-3' %>
+  <%= form.label :public %>
+  <%= form.check_box :public %>
+  <%= form.text_area :description,placeholder: 'description', class: 'form-control mb-3' %>
+  <%= form.submit "Submit", class: 'btn btn-primary' %>
+<% end %>
