@@ -3,7 +3,7 @@
 <div class ="container m-5">
     <h1 class="text-success text-center">Public Recipes</h1>
     <% @public_recipes.each do |recipe| %>
-        <div class="row border p-5">
+        <div class="row border p-5 my-2">
             <div class="col-6">
                 <h1><%= link_to recipe.name, recipes_show_path(recipe.id)  %></h1>
                 <p class="d-flex">By: <%=recipe.user.name %></p>
