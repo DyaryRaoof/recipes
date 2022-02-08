@@ -1,0 +1,6 @@
+<tr id="<%= dom_id food %>">
+  <th> <%= food.name %></th>
+  <th> <%= food.measurement_unit  %></th>
+  <th><%= "$#{food.price}"  %></th>
+  <th><%= button_to "Delete", food, method: :delete, class:'btn btn-danger' %></th>
+</tr>
