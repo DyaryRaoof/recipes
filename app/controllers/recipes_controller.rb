@@ -12,7 +12,7 @@ class RecipesController < ApplicationController
   end
 
   def shopping_list
-    @ids = RecipeFood.all.map {|rf| rf.food_id}
+    @ids = RecipeFood.all.map(&:food_id)
     puts @ids
     @foods = Food.where(id: @ids)
     @sum = 0
