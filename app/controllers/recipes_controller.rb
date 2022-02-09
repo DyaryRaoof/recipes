@@ -12,11 +12,15 @@ class RecipesController < ApplicationController
   end
 
   def shopping_list
-    @foods = Food.all
+    @ids = RecipeFood.all.map {|rf| rf.food_id}
+    puts @ids
+    @foods = Food.where(id: @ids)
     @sum = 0
     @foods.each do |food|
-      @recipe_food = RecipeFood.find(food.id)
-      @sum = (@sum + (@recipe_food.quantity * food.price))
+      @recipe_food = RecipeFood.find_by(food_id: food.id)
+
+      puts @recipe_food.class
+      @sum += @recipe_food.quantity * food.price
     end
   end
 
