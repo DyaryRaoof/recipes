@@ -1,24 +1,46 @@
-# README
+# Recipe
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+-  Ruby on Rails
+-  PostgreSQL
 
-* System dependencies
+## Getting Started
 
-* Configuration
+Download the ZIP from this [Link](https://github.com/DyaryRaoof/recipes.git), or run the following git command to clone the files to your machine:
 
-* Database creation
+- git clone https://github.com/DyaryRaoof/recipes.git
+- Open the cloned folder on the IDE of your choice
+- Install the required dependecies with `bundle install`
+- run `db:migrate`
+- rub `db:seed`
+- Use `rails s `to run the program
 
-* Database initialization
+## Authors
 
-* How to run the test suite
+👤 **MUSTAFA ABBAS**
 
-* Services (job queues, cache servers, search engines, etc.)
+- GitHub: [@githubhandle](https://github.com/mustabbas)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mustabbas/)
 
-* Deployment instructions
+👤 **Dyary Raoof**
+- GitHub: [@DyaryRaoof](https://github.com/DyaryRaoof)
+- Twitter: [@DyaryRaoof](https://twitter.com/DyaryRaoof)
+- LinkedIn: [@DyaryRaoof](https://linkedin.com/in/DyaryRaoof)
 
-* ...
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/DyaryRaoof/recipes/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
