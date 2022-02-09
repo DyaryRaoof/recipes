@@ -5,9 +5,14 @@
 <% @recipe.each do |recipe| %>
   <div class="row border m-5 p-5">
      <div class="col-4">
-         <h1><%= link_to recipe.name, recipes_show_path(recipe.id)  %></h1>
+         <% if can? :mange , recipe || recipe.public == true %>
+            <h1><%= link_to recipe.name, recipes_show_path(recipe.id)  %></h1>
+         <% else %>
+            <h1><%= recipe.name %></h1>
+          <% end %>
+          
          <% if can? :manage, recipe %>
-              <%= button_to  'Remove', destroy_recipes_path(id: recipe.id), method: :delete, class: "btn btn-primary"%>
+            <%= button_to  'Remove', destroy_recipes_path(id: recipe.id), method: :delete, class: "btn btn-primary"%>
           <% end %>
      </div>
      <div class ="col-8">
