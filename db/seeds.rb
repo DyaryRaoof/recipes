@@ -28,5 +28,7 @@ dyary.recipes[1].recipe_foods.create!(food_id: Food.first.id, quantity: 3);
 dyary.recipes[1].recipe_foods.create!(food_id: Food.all[1].id, quantity: 3);
 dyary.recipes[2].recipe_foods.create!(food_id: Food.all[2].id, quantity: 3);
 dyary.recipes[2].recipe_foods.create!(food_id: Food.all[2].id, quantity: 2);
+dyary.recipes[3].recipe_foods.create!(food_id: Food.all[2].id, quantity: 2);
+dyary.recipes[3].recipe_foods.create!(food_id: Food.all[2].id, quantity: 5);
 
 
