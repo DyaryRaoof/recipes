@@ -1,5 +1,5 @@
 current directory: /Users/sarathk/recipes/vendor/bundle/ruby/3.0.0/gems/bcrypt-3.1.16/ext/mri
-/usr/local/var/rbenv/versions/3.0.3/bin/ruby -I /usr/local/var/rbenv/versions/3.0.3/lib/ruby/3.0.0 -r ./siteconf20220208-7917-lkxie8.rb extconf.rb
+/usr/local/var/rbenv/versions/3.0.3/bin/ruby -I /usr/local/var/rbenv/versions/3.0.3/lib/ruby/3.0.0 -r ./siteconf20220209-4838-4tj3im.rb extconf.rb
 creating Makefile
 
 current directory: /Users/sarathk/recipes/vendor/bundle/ruby/3.0.0/gems/bcrypt-3.1.16/ext/mri
@@ -27,4 +27,4 @@ linking shared-object bcrypt_ext.bundle
 
 current directory: /Users/sarathk/recipes/vendor/bundle/ruby/3.0.0/gems/bcrypt-3.1.16/ext/mri
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20220208-7917-y4ho4q
+/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20220209-4838-tcg5by

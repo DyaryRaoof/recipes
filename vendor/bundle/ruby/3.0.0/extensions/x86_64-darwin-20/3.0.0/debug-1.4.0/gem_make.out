@@ -1,5 +1,5 @@
 current directory: /Users/sarathk/recipes/vendor/bundle/ruby/3.0.0/gems/debug-1.4.0/ext/debug
-/usr/local/var/rbenv/versions/3.0.3/bin/ruby -I /usr/local/var/rbenv/versions/3.0.3/lib/ruby/3.0.0 -r ./siteconf20220208-7917-4fl0y1.rb extconf.rb
+/usr/local/var/rbenv/versions/3.0.3/bin/ruby -I /usr/local/var/rbenv/versions/3.0.3/lib/ruby/3.0.0 -r ./siteconf20220209-4838-lu22f6.rb extconf.rb
 creating Makefile
 
 current directory: /Users/sarathk/recipes/vendor/bundle/ruby/3.0.0/gems/debug-1.4.0/ext/debug
@@ -13,4 +13,4 @@ linking shared-object debug/debug.bundle
 
 current directory: /Users/sarathk/recipes/vendor/bundle/ruby/3.0.0/gems/debug-1.4.0/ext/debug
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 debug.bundle ./.gem.20220208-7917-532weo/debug
+/usr/bin/install -c -m 0755 debug.bundle ./.gem.20220209-4838-chydkx/debug
