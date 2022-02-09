@@ -41,4 +41,8 @@ class RecipesController < ApplicationController
     redirect_to all_recipes_path(params[:user_id])
     flash[:alert] = 'Your recipe was successfully deleted!'
   end
+
+  def public
+    @public_recipes = Recipe.where(public: true)
+  end
 end
