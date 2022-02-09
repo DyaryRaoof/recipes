@@ -31,7 +31,7 @@
                 <tr>
                 <th><%= food.name%></th>
                 <td><%= food.measurement_unit%></td>
-                <td><%= food.price%></td>
+                <td>$<%= food.price%></td>
                 <td class = "d-flex"><div class ="mx-3"><%= link_to 'Modify'%></div><div class ="mx-3"><%= link_to 'Remove' %></div></td>
                 </tr>
              <% end %>
