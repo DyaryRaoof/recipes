@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :confirmable
 
   has_many :foods, dependent: :destroy
+  has_many :recipes
 end
