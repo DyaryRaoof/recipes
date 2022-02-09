@@ -9,8 +9,10 @@
                 <p class="d-flex">By: <%=recipe.user.name %></p>
             </div>
             <div class ="col-6">
-            <p>Total food items: <%= recipe.recipe_foods.all.count %></p>
-            <p>Total price: $ <%=recipe.recipe_foods.reduce(0) { |sum, recipe_food| sum + (recipe_food.food.price * recipe_food.quantity) }%></p>
+                <% if recipe.recipe_foods %>
+                    <p>Total food items: <%= recipe.recipe_foods.all.count %></p>
+                    <p>Total price: $ <%=recipe.recipe_foods.reduce(0) { |sum, recipe_food| sum + (recipe_food.food.price * recipe_food.quantity) }%></p>
+                <% end %>
             </div>
         </div>
     <% end %>
