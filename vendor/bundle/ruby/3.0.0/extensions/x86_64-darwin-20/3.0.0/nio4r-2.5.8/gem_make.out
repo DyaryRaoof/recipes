@@ -1,5 +1,5 @@
 current directory: /Users/sarathk/recipes/vendor/bundle/ruby/3.0.0/gems/nio4r-2.5.8/ext/nio4r
-/usr/local/var/rbenv/versions/3.0.3/bin/ruby -I /usr/local/var/rbenv/versions/3.0.3/lib/ruby/3.0.0 -r ./siteconf20220208-7917-p5kost.rb extconf.rb
+/usr/local/var/rbenv/versions/3.0.3/bin/ruby -I /usr/local/var/rbenv/versions/3.0.3/lib/ruby/3.0.0 -r ./siteconf20220209-4838-r851.rb extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... no
 checking for linux/io_uring.h... no
@@ -107,4 +107,4 @@ linking shared-object nio4r_ext.bundle
 
 current directory: /Users/sarathk/recipes/vendor/bundle/ruby/3.0.0/gems/nio4r-2.5.8/ext/nio4r
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20220208-7917-7orekx
+/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20220209-4838-jchvqp

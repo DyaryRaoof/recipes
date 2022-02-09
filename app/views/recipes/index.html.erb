@@ -6,7 +6,9 @@
   <div class="row border m-5 p-5">
      <div class="col-4">
          <h1><%= link_to recipe.name, recipes_show_path(recipe.id)  %></h1>
-         <%= button_to  'Remove', destroy_recipes_path(id: recipe.id), method: :delete, class: "btn btn-primary"%>
+         <% if can? :manage, recipe %>
+              <%= button_to  'Remove', destroy_recipes_path(id: recipe.id), method: :delete, class: "btn btn-primary"%>
+          <% end %>
      </div>
      <div class ="col-8">
        <p><%= recipe.description %></p>

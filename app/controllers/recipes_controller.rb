@@ -6,10 +6,18 @@ class RecipesController < ApplicationController
   def show
     @recipe = Recipe.find(params[:id])
     @foods = Food.all
+    @foods.each do |food|
+      @recipe_food = RecipeFood.find(food.id)
+    end
   end
 
   def shopping_list
     @foods = Food.all
+    @sum = 0
+    @foods.each do |food|
+      @recipe_food = RecipeFood.find(food.id)
+      @sum = (@sum + (@recipe_food.quantity * food.price))
+    end
   end
 
   def new

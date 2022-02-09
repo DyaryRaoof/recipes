@@ -1,5 +1,5 @@
 current directory: /Users/sarathk/recipes/vendor/bundle/ruby/3.0.0/gems/pg-1.3.1/ext
-/usr/local/var/rbenv/versions/3.0.3/bin/ruby -I /usr/local/var/rbenv/versions/3.0.3/lib/ruby/3.0.0 -r ./siteconf20220208-7917-1nla6m.rb extconf.rb
+/usr/local/var/rbenv/versions/3.0.3/bin/ruby -I /usr/local/var/rbenv/versions/3.0.3/lib/ruby/3.0.0 -r ./siteconf20220209-4838-jnotq6.rb extconf.rb
 Calling libpq with GVL unlocked
 checking for pg_config... yes
 Using config values from /usr/local/bin/pg_config
@@ -55,5 +55,5 @@ linking shared-object pg_ext.bundle
 
 current directory: /Users/sarathk/recipes/vendor/bundle/ruby/3.0.0/gems/pg-1.3.1/ext
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20220208-7917-8hts82
+/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20220209-4838-jp05v5
 installing pg_ext libraries

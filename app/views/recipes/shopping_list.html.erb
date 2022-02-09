@@ -3,10 +3,10 @@
 <h1 class ="text-center">Shopping List</h1>
   <div class="row border p-5">
      <div class="col-6">
-        <p>Amount of food items to buy: 3 </p>
+        <p>Amount of food items to buy: <%= @foods.length%> </p>
      </div>
      <div class ="col-6">
-         <p>Total value of food needed: $819 </p>
+         <p>Total value of food needed: $<%= @sum%> </p>
      </div>
   </div>
   <div class = "boorder m-5"></div>
@@ -22,8 +22,8 @@
             <% @foods.each do |food| %>
                 <tr>
                 <th><%= food.name%></th>
-                <td><%= food.measurement_unit%></td>
-                <td>$<%= food.price%></td>
+                <td><%= @recipe_food.quantity%></td>
+                <td>$<%= (@recipe_food.quantity)*(food.price)%></td>
                 </tr>
              <% end %>
             </tbody>
