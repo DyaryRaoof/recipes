@@ -1,10 +1,16 @@
 class RecipesController < ApplicationController
   def index
     @recipe = Recipe.all
-    puts @recipe
   end
 
-  def show; end
+  def show
+    @recipe = Recipe.find(params[:id])
+    @foods = Food.all
+  end
+
+  def shopping_list
+    @foods = Food.all
+  end
 
   def new
     @recipe = Recipe.new
@@ -16,6 +22,7 @@ class RecipesController < ApplicationController
   def create
     recipe = Recipe.new(params.require(:recipe).permit(:name, :preparation_time, :cooking_time, :description, :public,
                                                        :user_id))
+
     respond_to do |format|
       if recipe.save
         format.html do
