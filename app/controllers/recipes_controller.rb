@@ -8,6 +8,10 @@ class RecipesController < ApplicationController
     @foods = Food.all
   end
 
+  def shopping_list
+    @foods = Food.all
+  end
+
   def new
     @recipe = Recipe.new
     respond_to do |format|

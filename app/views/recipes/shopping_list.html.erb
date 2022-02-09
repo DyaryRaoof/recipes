@@ -1,0 +1,31 @@
+
+<div class ="container m-5">
+<h1 class ="text-center">Shopping List</h1>
+  <div class="row border p-5">
+     <div class="col-6">
+        <p>Amount of food items to buy: 3 </p>
+     </div>
+     <div class ="col-6">
+         <p>Total value of food needed: $819 </p>
+     </div>
+  </div>
+  <div class = "boorder m-5"></div>
+       <table class="table table-bordered">
+            <thead>
+                <tr>
+                <th scope="col">Food</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">price</th>
+                </tr>
+            </thead>
+            <tbody>
+            <% @foods.each do |food| %>
+                <tr>
+                <th><%= food.name%></th>
+                <td><%= food.measurement_unit%></td>
+                <td>$<%= food.price%></td>
+                </tr>
+             <% end %>
+            </tbody>
+        </table>
+</div>
