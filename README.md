@@ -7,6 +7,9 @@ The Recipe app keeps track of all your recipes, ingredients, and inventory. It w
 -  Ruby on Rails
 -  PostgreSQL
 
+## Live Demo
+https://recipes-must-dyary-production.herokuapp.com/
+
 ## Getting Started
 
 Download the ZIP from this [Link](https://github.com/DyaryRaoof/recipes.git), or run the following git command to clone the files to your machine:
