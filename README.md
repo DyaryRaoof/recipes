@@ -47,3 +47,4 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+<!-- The email for this project is dyary2018@gmail.com -->
