@@ -1,0 +1,33 @@
+ <%if user_signed_in?%>
+ <div >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand px-2" href="#">Recipes</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <%= link_to 'Create Food', new_food_path, class: "nav-link" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Food List', foods_path, class: "nav-link" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'All Recipes', all_recipes_path, class: "nav-link" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'New Recipes', new_recipes_path, class: "nav-link" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Shopping List', shopping_list_path, class: "nav-link" %>
+              </li>
+               <li class="nav-item">
+                <%= button_to 'Sign out', destroy_user_session_path, :method => :delete,  class: "nav-link border-0 bg-light" %>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+<%end%>
+ 

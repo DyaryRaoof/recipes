@@ -1,0 +1,40 @@
+
+<div class ="container m-5">
+<h1 class ="text-center"><%= @recipe.name %></h1>
+  <div class="row border p-5">
+     <div class="col-6">
+        <p>Preparation Time: <%= @recipe.preparation_time %> </p>
+         <p>cooking Time: <%= @recipe.cooking_time %> </p>
+         <p>Steps go here...</p>
+         <%= button_to  'Generate shoping list', method: :delete, class: "btn btn-primary"%>
+     </div>
+     <div class ="col-6">
+        <label class="switch m-5">
+           <input type="checkbox" <% if  @recipe.public %> checked <% end %>>
+           <span class="slider round"></span>
+        </label>
+        <%= button_to  'Add ingredient', method: :delete, class: "btn btn-primary"%>
+     </div>
+  </div>
+  <div class = "boorder m-5"></div>
+       <table class="table table-bordered">
+            <thead>
+                <tr>
+                <th scope="col">Food</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Value</th>
+                <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            <% @foods.each do |food| %>
+                <tr>
+                <th><%= food.name%></th>
+                <td><%= @recipe_food.quantity%></td>
+                <td>$<%= (@recipe_food.quantity)*(food.price)%></td>
+                <td class = "d-flex"><div class ="mx-3"><%= link_to 'Modify'%></div><div class ="mx-3"><%= link_to 'Remove' %></div></td>
+                </tr>
+             <% end %>
+            </tbody>
+        </table>
+</div>
