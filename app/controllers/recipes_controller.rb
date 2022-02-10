@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
   def index
-    @recipe = Recipe.includes(:user).all
+    @recipe = Recipe.includes(:user).where('user_id=? OR public=?', current_user.id, true)
   end
 
   def show
@@ -13,13 +13,10 @@ class RecipesController < ApplicationController
 
   def shopping_list
     @ids = RecipeFood.all.map(&:food_id)
-    puts @ids
     @foods = Food.where(id: @ids)
     @sum = 0
     @foods.each do |food|
       @recipe_food = RecipeFood.find_by(food_id: food.id)
-
-      puts @recipe_food.class
       @sum += @recipe_food.quantity * food.price
     end
   end
